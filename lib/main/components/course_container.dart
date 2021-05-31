@@ -3,7 +3,7 @@ import 'package:webapp/models/CourseInfo.dart';
 
 import 'file_info_card.dart';
 
-class CourseContainers extends StatelessWidget {
+class  CourseContainers extends StatelessWidget {
   const CourseContainers({
     Key key,
   }) : super(key: key);

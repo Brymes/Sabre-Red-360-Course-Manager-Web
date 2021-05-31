@@ -3,12 +3,14 @@ import 'package:webapp/index.dart';
 import 'package:webapp/models/CourseInfo.dart';
 
 class CourseContainerCard extends StatelessWidget {
-  const CourseContainerCard({
+  var info;
+
+  CourseContainerCard({
     Key key,
     @required this.info,
   }) : super(key: key);
 
-  final CourseInfo info;
+  String mySvgSrc = "assets/icons/airplane.svg";
 
   @override
   Widget build(BuildContext context) {
@@ -37,15 +39,15 @@ class CourseContainerCard extends StatelessWidget {
                       borderRadius: const BorderRadius.all(Radius.circular(10)),
                     ),
                     child: SvgPicture.asset(
-                      info.svgSrc,
-                      color: info.color,
+                      mySvgSrc,
+                      color: Color(0xFF31B98E),
                     ),
                   ),
-                  Icon(Icons.more_vert, color: Colors.white54)
+                  Icon(Icons.more_vert, color: Colors.white)
                 ],
               ),
               Text(
-                info.title,
+                info.courseTitle,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),

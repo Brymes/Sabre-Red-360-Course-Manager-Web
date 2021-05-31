@@ -1,15 +1,15 @@
 import 'package:webapp/index.dart';
 
 class CourseInfo {
-
   // FIXME Iterate over the list of Sabre Colors
-  final String svgSrc, title, instructionLang;
+  final String courseTitle, instructionLang;
   final int numOfStudents, studentPercentage;
   final Color color;
+  final String svgSrc;
 
   CourseInfo(
       {this.svgSrc,
-      this.title,
+      this.courseTitle,
       this.instructionLang,
       this.studentPercentage,
       this.numOfStudents,
@@ -18,14 +18,14 @@ class CourseInfo {
 
 List demoCourseInfo = [
   CourseInfo(
-      title: "Intro to Aviation",
+      courseTitle: "Intro to Aviation",
       numOfStudents: 30,
       svgSrc: "assets/icons/Documents.svg",
       studentPercentage: 60,
       color: primaryColor,
       instructionLang: "English"),
   CourseInfo(
-      title: "Intro to GDS",
+      courseTitle: "Intro to GDS",
       numOfStudents: 30,
       svgSrc: "assets/icons/Documents.svg",
       studentPercentage: 60,

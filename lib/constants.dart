@@ -5,3 +5,6 @@ const secondaryColor = Color(0xFF4A5767);
 const bgColor = Color(0xFFFFFFFF);
 
 const defaultPadding = 16.0;
+
+const URL = "https://sabre-course-manager-test.herokuapp.com/graphql/";
+

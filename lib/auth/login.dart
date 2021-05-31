@@ -8,7 +8,11 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+
   bool isChecked = false;
+  String sessionStorage="";
+
+
   @override
   void initState() {
     super.initState();
@@ -36,7 +40,7 @@ class Body extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Sign In to \nSabre Course Dashboard',
+              'Sign In to \nSabre Course Registration',
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
@@ -73,17 +77,7 @@ class Body extends StatelessWidget {
                 ),
               ],
             ),
-            Image.asset(
-              'images/illustration-2.jpg',
-              width: 300,
-            ),
-
-            // MediaQuery.of(context).size.width >= 1300 //Responsive
-            //     ? Image.asset(
-            //         'images/illustration-1.png',
-            //         width: 300,
-            //       )
-            //     : SizedBox(),
+            
             Padding(
               padding: EdgeInsets.symmetric(
                   vertical: MediaQuery.of(context).size.height / 6),
